@@ -27,3 +27,19 @@
     cd /tmp/
     rm -rf /tmp/finance
     ```
+
+   explanation:
+
+    * install packages
+    * start httpd service
+    * set httpd service to auto-start from boot-time
+    * stop firewall service
+    * disable boot-time load for firewall service
+    * make a finance folder in the tmp director (`-p` make sure that this code does not fail when the folder already exit)
+    * enter the finance folder
+    * download the zipped website
+    * unzip the website (`-o` to overwrite previously written files)
+    * move the files unzipped to the `/var/www/html` folder
+    * restart httpd service
+    * leave the finance folder
+    * delete the finance folder
